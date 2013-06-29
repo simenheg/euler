@@ -15,5 +15,5 @@ def name_score(name):
 score = 0
 for i, name in enumerate(sorted(open('names.txt').read().split(','))):
     score += (i + 1) * name_score(name.strip('"'))
-    
+
 print(score) # => 871198282
