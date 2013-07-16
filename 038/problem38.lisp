@@ -18,6 +18,6 @@
 (defun pandigital-p (s)
   (string= "123456789" (sort (copy-seq s) #'char<)))
 
-(loop for i from 9876 downto 9320
+(loop for i from 9876 downto 9012
       for s = (format nil "~a~a" i (* i 2))
       when (pandigital-p s) return s) ; => 932718654
